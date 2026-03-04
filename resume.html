@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Sara I. Langdon | Resume</title>
     <meta charset="UTF-8">
+    <title>Sara I. Langdon | Resume</title>
 
     <style>
         body {
@@ -10,6 +10,12 @@
             margin: 0;
             background-color: #F6FAF7;
             color: #000000;
+        }
+
+        .top-bar {
+            height: 8px;
+            background-color: #0b3d2e; /* forest green */
+            width: 100%;
         }
 
         .container {
@@ -21,7 +27,7 @@
         h1 {
             font-size: 60px;
             color: #0b3d2e;  /* forest green */
-            text-align: center;
+            text-align: center;  /* centered heading */
             margin-bottom: 30px;
         }
 
@@ -46,11 +52,20 @@
             height: 800px; /* adjust height as needed */
             border: 1px solid #ccc;
             border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1); /* subtle shadow for polish */
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 650px) {
+            iframe {
+                height: 600px;
+            }
         }
     </style>
 </head>
 
 <body>
+    <div class="top-bar"></div> <!-- Top green bar added -->
     <div class="container">
         <h1>Resume</h1>
 
