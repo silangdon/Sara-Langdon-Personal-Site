@@ -25,26 +25,20 @@
             margin-bottom: 30px;
         }
 
-        nav {
-            text-align: center;
-            margin-bottom: 40px;
-        }
-
-        nav a {
+        a.back-link {
             display: inline-block;
-            margin: 0 15px;
+            margin-bottom: 20px;
             text-decoration: none;
-            color: #000000;
-            font-size: 16px;
-            border: 2px solid #0b3d2e;
+            color: #0b3d2e;
+            border: 1px solid #0b3d2e;
             padding: 6px 12px;
             border-radius: 5px;
             transition: all 0.2s ease;
         }
 
-        nav a:hover {
+        a.back-link:hover {
             background-color: #0b3d2e;
-            color: #ffffff;
+            color: #fff;
         }
 
         .contact-info {
@@ -70,13 +64,8 @@
 
     <h1>Contact</h1>
 
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="whatsnew.html">What's New</a>
-        <a href="resume.html">Resume</a>
-        <a href="contact.html">Contact</a>
-        <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-    </nav>
+    <!-- Back link to home page -->
+    <a class="back-link" href="index.html">← Back to Home</a>
 
     <div class="contact-info">
         <p>Email: <a href="mailto:yourname@email.com">yourname@email.com</a></p>
