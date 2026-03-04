@@ -17,7 +17,7 @@
     }
 
     h1 {
-        font-size: 42px;
+        font-size: 60px;
         color: #0b3d2e;
         margin-bottom: 10px;
         text-align: center;
@@ -35,15 +35,20 @@
     }
 
     nav a {
-        display: inline-block;    
-        margin: 0 20px;
+        display: inline-block;
+        margin: 0 10px;                  /* spacing between boxes */
+        padding: 8px 16px;               /* space inside the box */
         text-decoration: none;
         color: #000000;
         font-size: 16px;
+        border: 2px solid #0b3d2e;      /* forest green outline */
+        border-radius: 6px;              /* rounded corners */
+        transition: all 0.2s ease;       /* smooth hover effect */
     }
-
+    
     nav a:hover {
-        color: #0b3d2e;
+        background-color: #0b3d2e;       /* forest green background on hover */
+        color: #ffffff;                  /* white text on hover */
     }
 
     .about-wrapper {
@@ -115,7 +120,7 @@
 
             <p>
                 In addition to academics, I stay active and balanced by going to Pure Barre regularly and spending time with friends and family. 
-                I enjoy having projects to work on—whether that’s building a personal website from scratch or diving deep into a policy topic. 
+                I enjoy having projects to work on, whether that’s building a personal website from scratch or diving deep into a policy topic. 
                 I’m motivated by curiosity and the desire to build skills that are both analytically rigorous and practically useful.
             </p>
 
