@@ -11,16 +11,16 @@
             color: #000000;
         }
 
+        .top-bar {
+            height: 15px;
+            background-color: #0b3d2e;
+            width: 100%;
+        }
+
         .container {
             max-width: 900px;
             margin: 100px auto;
             padding: 0 20px;
-        }
-
-        .top-bar {
-            height: 8px;
-            background-color: #0b3d2e;
-            width: 100%;
         }
 
         h1 {
@@ -30,13 +30,15 @@
             margin-bottom: 30px;
         }
 
-        /* Center all section headings */
+        /* Section headings above each block */
         h2 {
             font-size: 28px;
             color: #0b3d2e;
-            margin-top: 40px;
-            margin-bottom: 15px;
-            text-align: center;
+            text-align: left;
+            margin-top: 50px;
+            margin-bottom: 20px;
+            padding-bottom: 5px;
+            border-bottom: 2px solid #0b3d2e; /* optional underline */
         }
 
         a.back-link {
@@ -57,7 +59,7 @@
 
         .about-paragraph {
             line-height: 1.7;
-            font-size: 15px;
+            font-size: 17px;
             flex: 1;           /* paragraph fills remaining space next to image */
             min-width: 200px;  /* prevents text from shrinking too small */
         }
@@ -75,6 +77,13 @@
             width: 250px;
             border-radius: 8px;
             flex-shrink: 0;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        /* Image hover effect */
+        .section-wrapper img:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.15);
         }
 
         footer {
