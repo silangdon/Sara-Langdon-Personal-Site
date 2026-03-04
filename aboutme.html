@@ -30,11 +30,13 @@
             margin-bottom: 30px;
         }
 
+        /* Center all section headings */
         h2 {
             font-size: 28px;
             color: #0b3d2e;
             margin-top: 40px;
             margin-bottom: 15px;
+            text-align: center;
         }
 
         a.back-link {
@@ -55,9 +57,9 @@
 
         .about-paragraph {
             line-height: 1.7;
-            font-size: 17px;
-            flex: 1;          /* text fills remaining space next to image */
-            min-width: 200px; /* prevents text from shrinking too small */
+            font-size: 15px;
+            flex: 1;           /* paragraph fills remaining space next to image */
+            min-width: 200px;  /* prevents text from shrinking too small */
         }
 
         .section-wrapper {
@@ -65,7 +67,8 @@
             align-items: flex-start;
             gap: 30px;
             margin-bottom: 40px;
-            flex-wrap: wrap; /* wraps on smaller screens */
+            flex-wrap: wrap;       /* wraps on smaller screens */
+            justify-content: flex-start; /* keeps image + text left-aligned */
         }
 
         .section-wrapper img {
@@ -81,7 +84,7 @@
             text-align: center;
         }
 
-        /* Responsive for smaller screens */
+        /* Responsive layout for small screens */
         @media (max-width: 650px) {
             .section-wrapper {
                 flex-direction: column;
