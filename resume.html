@@ -32,9 +32,15 @@
         .back-link {
             display: inline-block;
             margin-bottom: 30px;
-            text-decoration: none;
+            text-decoration: none;      /* no underline by default */
             color: #0b3d2e;
             font-weight: bold;
+            transition: all 0.3s ease;  /* smooth hover effect */
+        }
+
+        .back-link:hover {
+            text-decoration: underline; /* underline appears on hover */
+            color: #0b3d2e;             /* keeps color consistent */
         }
 
         .intro {
