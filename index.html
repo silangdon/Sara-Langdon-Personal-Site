@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Sara I. Langdon | Personal Website</title>
+    <title>Sara I. Langdon | Home</title>
     <style>
         body {
             font-family: Georgia, serif;
@@ -11,10 +11,18 @@
             color: #000000;
         }
 
+        /* Top green bar */
+        .top-bar {
+            height: 8px;
+            background-color: #0b3d2e;
+            width: 100%;
+        }
+
+        /* Main container */
         .container {
-            max-width: 750px;
-            margin: 100px auto;
-            padding: 0 20px;
+            max-width: 1100px;
+            margin: 50px auto;
+            padding: 0 30px;
         }
 
         h1 {
@@ -25,8 +33,8 @@
         }
 
         nav {
-            text-align: center;      
-            margin-bottom: 40px;     
+            text-align: center;
+            margin-bottom: 50px;
         }
 
         nav a {
@@ -46,22 +54,22 @@
             color: #ffffff;
         }
 
-        .about-wrapper {
+        .home-wrapper {
             display: flex;
             align-items: flex-start;
-            gap: 40px;
+            gap: 50px;
             flex-wrap: wrap;
         }
 
         .profile-column {
             display: flex;
-            flex-direction: column; /* stack headshot + mini facts */
+            flex-direction: column;
             align-items: flex-start;
             flex-shrink: 0;
         }
 
         .profile-pic {
-            width: 300px;
+            width: 350px;
             border-radius: 6px;
             margin-bottom: 15px;
         }
@@ -76,17 +84,13 @@
         }
 
         .mini-facts strong {
-            color: #0b3d2e; /* forest green labels */
+            color: #0b3d2e;
         }
 
-        .about-text {
+        .home-text {
             flex: 1;
-            line-height: 1.7;
-            font-size: 17px;
-        }
-
-        .about-text p {
-            margin-bottom: 15px;
+            line-height: 1.8;
+            font-size: 18px;
         }
 
         footer {
@@ -99,48 +103,46 @@
 </head>
 <body>
 
-<div class="container">
+    <!-- Top green bar -->
+    <div class="top-bar"></div>
 
-    <h1>Sara I. Langdon</h1>
+    <div class="container">
 
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="aboutme.html">About Me</a>
-        <a href="whatsnew.html">What's New</a>
-        <a href="resume.html">Resume</a>
-        <a href="https://www.linkedin.com/in/sara-langdon" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-    </nav>
+        <h1>Sara I. Langdon</h1>
 
-    <div class="about-wrapper">
-        <!-- Left column: headshot + mini facts -->
-        <div class="profile-column">
-            <img src="headshot.jpg" alt="Sara I. Langdon" class="profile-pic">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="aboutme.html">About Me</a>
+            <a href="whatsnew.html">What's New</a>
+            <a href="resume.html">Resume</a>
+            <a href="https://www.linkedin.com/in/sara-langdon" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        </nav>
 
-            <div class="mini-facts">
-                <p><strong>Email:</strong> sarailangdon@gmail.com</p>
-                <p><strong>Location:</strong> Alexandria, VA</p>
-                <p><strong>School:</strong> College of William & Mary</p>
-                <p><strong>Skills:</strong> Python; RStudio; SPSS Syntax; <p></p>ArcGIS; UCINet</p>
+        <div class="home-wrapper">
+            <!-- Left column: headshot + mini facts -->
+            <div class="profile-column">
+                <img src="headshot.jpg" alt="Sara I. Langdon" class="profile-pic">
+
+                <div class="mini-facts">
+                    <p><strong>Email:</strong> sarailangdon@gmail.com</p>
+                    <p><strong>Location:</strong> Alexandria, VA</p>
+                    <p><strong>School:</strong> College of William & Mary</p>
+                    <p><strong>Skills:</strong> Python, RStudio, SPSS, ArcGIS, UCINet</p>
+                </div>
+            </div>
+
+            <!-- Right column: short about me -->
+            <div class="home-text">
+                <p>Hello! I'm a Public Policy and Data Science student at the College of William & Mary. I have experience across government, political campaigns, and health policy research. I’m passionate about using data and research to support informed decision-making and civic engagement.</p>
+
+                <p>Check out my <a href="resume.html">resume</a> or <a href="aboutme.html">learn more about me</a> to see my academic and professional work.</p>
             </div>
         </div>
 
-        <!-- Right column: about text -->
-        <div class="about-text">
-            <p>
-                I’m a Public Policy and Data Science student at the College of William & Mary with experience across government, political campaigns, and health policy research. I’ve supported offices ranging from Senator Tim Kaine’s legislative team to the Embassy of Spain, contributing to policy tracking, constituent communications, and diplomatic event coordination. These roles have given me hands-on exposure to both domestic and international policy work, sharpening my research, writing, and analytical skills.
-            </p>
+        <footer>
+            © 2026 Sara I. Langdon
+        </footer>
 
-            <p>
-                Beyond internships, I’ve also developed practical experience in political outreach and campaign communications, including creating social media content and streamlining volunteer engagement for statewide initiatives. Bilingual in English and Spanish, I’m passionate about using data and policy expertise to support informed decision-making and meaningful civic engagement.
-            </p>
-        </div>
     </div>
-
-    <footer>
-        © 2026 Sara I. Langdon
-    </footer>
-
-</div>
-
 </body>
 </html>
