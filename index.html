@@ -10,25 +10,32 @@
             background-color: #F6FAF7;
             color: #000000;
         }
+
         .top-bar {
-            height: 15px;  /* thicker bars */
+            height: 15px; /* thicker bars */
             background-color: #0b3d2e;
             width: 100%;
         }
+
         .container {
             max-width: 1100px;
             margin: 100px auto;
             padding: 0 20px;
         }
+
         h1 {
             font-size: 60px;
             color: #0b3d2e;
             margin-bottom: 10px;
             text-align: center;
+        }
+
         nav {
             text-align: center;
+            margin-top: 20px;   /* <-- adjust this to move buttons down */
             margin-bottom: 40px;
         }
+
         nav a {
             display: inline-block;
             margin: 0 10px;
@@ -40,45 +47,55 @@
             border-radius: 6px;
             transition: all 0.2s ease;
         }
+
         nav a:hover {
             background-color: #0b3d2e;
             color: #ffffff;
         }
+
         .about-wrapper {
             display: flex;
             align-items: flex-start;
             gap: 45px;
             flex-wrap: wrap;
         }
+
         .profile-column {
             display: flex;
             flex-direction: column; /* stack headshot + mini facts */
             align-items: flex-start;
             flex-shrink: 0;
         }
+
         .profile-pic {
             width: 300px;
             border-radius: 6px;
             margin-bottom: 15px;
         }
+
         .mini-facts {
             font-size: 15px;
             line-height: 1.5;
         }
+
         .mini-facts p {
             margin: 4px 0;
         }
+
         .mini-facts strong {
             color: #0b3d2e; /* forest green labels */
         }
+
         .about-text {
             flex: 1;
             line-height: 1.7;
             font-size: 15px;
         }
+
         .about-text p {
             margin-bottom: 15px;
         }
+
         footer {
             margin-top: 100px;
             font-size: 14px;
@@ -88,42 +105,43 @@
     </style>
 </head>
 <body>
-<div class="top-bar"></div>
-<div class="container">
-    <h1>Sara I. Langdon</h1>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="aboutme.html">About Me</a>
-        <a href="whatsnew.html">What's New</a>
-        <a href="resume.html">Resume</a>
-        <a href="https://www.linkedin.com/in/sara-langdon" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-    </nav>
-    <div class="about-wrapper">
-        <!-- Left column: headshot + mini facts -->
-        <div class="profile-column">
-            <img src="headshot.jpg" alt="Sara I. Langdon" class="profile-pic">
-            <div class="mini-facts">
-                <p><strong>Email:</strong> sarailangdon@gmail.com</p>
-                <p><strong>Location:</strong> Alexandria, VA</p>
-                <p><strong>School:</strong> College of William & Mary</p>
-                <p><strong>Skills:</strong> Python; RStudio; SPSS Syntax; <p></p>ArcGIS; UCINet</p>
+    <div class="top-bar"></div>
+    <div class="container">
+        <h1>Sara I. Langdon</h1>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="aboutme.html">About Me</a>
+            <a href="whatsnew.html">What's New</a>
+            <a href="resume.html">Resume</a>
+            <a href="https://www.linkedin.com/in/sara-langdon" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        </nav>
+
+        <div class="about-wrapper">
+            <!-- Left column: headshot + mini facts -->
+            <div class="profile-column">
+                <img src="headshot.jpg" alt="Sara I. Langdon" class="profile-pic">
+                <div class="mini-facts">
+                    <p><strong>Email:</strong> sarailangdon@gmail.com</p>
+                    <p><strong>Location:</strong> Alexandria, VA</p>
+                    <p><strong>School:</strong> College of William & Mary</p>
+                    <p><strong>Skills:</strong> Python; RStudio; SPSS Syntax; ArcGIS; UCINet</p>
+                </div>
+            </div>
+
+            <!-- Right column: about text -->
+            <div class="about-text">
+                <p>I’m a Public Policy and Data Science student at the College of William & Mary with experience across government, political campaigns, and health policy research. I’ve supported offices ranging from Senator Tim Kaine’s legislative team to the Embassy of Spain, contributing to policy tracking, constituent communications, and diplomatic event coordination. These roles have given me hands-on exposure to both domestic and international policy work, sharpening my research, writing, and analytical skills. I’ve also gained experience managing social media accounts and producing content to communicate complex policy topics to broader audiences, combining analytical insight with clear, accessible messaging.</p>
+
+                <p>Currently, I’m building my academic and professional portfolio through coursework in economics, government, philosophy, Spanish, and applied data analysis. Through research projects and policy writing, I’ve developed experience analyzing legislation, evaluating policy tradeoffs, and communicating complex ideas clearly. Beyond internships, I’ve also developed practical skills in political outreach and campaign communications, including creating content, coordinating volunteers, and streamlining engagement for statewide initiatives. Bilingual in English and Spanish, I’m passionate about using data and policy expertise to support informed decision-making and meaningful civic engagement.</p>
+
+                <p>In addition to my professional and academic experience, I’m committed to continuous learning and skill-building. I enjoy applying data science tools to real-world policy questions, exploring topics like political polarization, legislative processes, and public health policy. These projects allow me to combine analytical rigor with creativity, whether that’s designing research visualizations, building databases, or creating accessible materials to communicate findings. I’m driven by curiosity and the desire to translate complex information into actionable insights that can inform both policy decisions and public understanding.</p>
             </div>
         </div>
-        <!-- Right column: about text -->
-        <div class="about-text">
-            <p>
-                I’m a Public Policy and Data Science student at the College of William & Mary with experience across government, political campaigns, and health policy research. I’ve supported offices ranging from Senator Tim Kaine’s legislative team to the Embassy of Spain, contributing to policy tracking, constituent communications, and diplomatic event coordination. These roles have given me hands-on exposure to both domestic and international policy work, sharpening my research, writing, and analytical skills. I’ve also gained experience managing social media accounts and producing content to communicate complex policy topics to broader audiences, combining analytical insight with clear, accessible messaging.
-            </p>
-            <p>
-                Currently, I’m building my academic and professional portfolio through coursework in economics, government, philosophy, Spanish, and applied data analysis. Through research projects and policy writing, I’ve developed experience analyzing legislation, evaluating policy tradeoffs, and communicating complex ideas clearly. Beyond internships, I’ve also developed practical skills in political outreach and campaign communications, including creating content, coordinating volunteers, and streamlining engagement for statewide initiatives. Bilingual in English and Spanish, I’m passionate about using data and policy expertise to support informed decision-making and meaningful civic engagement.
-            </p>
-            <p>In addition to my professional and academic experience, I’m committed to continuous learning and skill-building. I enjoy applying data science tools to real-world policy questions, exploring topics like political polarization, legislative processes, and public health policy. These projects allow me to combine analytical rigor with creativity, whether that’s designing research visualizations, building databases, or creating accessible materials to communicate findings. I’m driven by curiosity and the desire to translate complex information into actionable insights that can inform both policy decisions and public understanding.
-            </p>
-        </div>
-</div>
-    <footer>
-        © 2026 Sara I. Langdon
-    </footer>
-</div>
+
+        <footer>
+            © 2026 Sara I. Langdon
+        </footer>
+    </div>
 </body>
 </html>
