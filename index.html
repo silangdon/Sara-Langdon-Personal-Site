@@ -24,12 +24,6 @@
             text-align: center;
         }
 
-        .subtitle {
-            font-size: 18px;
-            margin-bottom: 30px;
-            text-align: center;
-        }
-
         nav {
             text-align: center;      
             margin-bottom: 40px;     
@@ -59,10 +53,30 @@
             flex-wrap: wrap;
         }
 
+        .profile-column {
+            display: flex;
+            flex-direction: column; /* stack headshot + mini facts */
+            align-items: flex-start;
+            flex-shrink: 0;
+        }
+
         .profile-pic {
             width: 300px;
             border-radius: 6px;
-            flex-shrink: 0;
+            margin-bottom: 15px;
+        }
+
+        .mini-facts {
+            font-size: 15px;
+            line-height: 1.5;
+        }
+
+        .mini-facts p {
+            margin: 4px 0;
+        }
+
+        .mini-facts strong {
+            color: #0b3d2e; /* forest green labels */
         }
 
         .about-text {
@@ -98,27 +112,28 @@
     </nav>
 
     <div class="about-wrapper">
-    <div>
-        <img src="headshot.jpg" alt="Sara I. Langdon" class="profile-pic">
+        <!-- Left column: headshot + mini facts -->
+        <div class="profile-column">
+            <img src="headshot.jpg" alt="Sara I. Langdon" class="profile-pic">
 
-        <!-- Mini facts under the image -->
-        <div class="mini-facts">
-            <p><strong>Location:</strong> Alexandria, VA</p>
-            <p><strong>School:</strong> College of William & Mary</p>
-            <p><strong>Email:</strong> sarailangdon@gmail.com</p>
+            <div class="mini-facts">
+                <p><strong>Location:</strong> Alexandria, VA</p>
+                <p><strong>School:</strong> College of William & Mary</p>
+                <p><strong>Email:</strong> sarailangdon@gmail.com</p>
+                <p><strong>Tools:</strong> Python; RStudio; SPSS Syntax; ArcGIS; UCINet</p>
+            </div>
         </div>
-    </div>
 
-    <div class="about-text">
-        <p>
-            I’m a Public Policy and Data Science student at the College of William & Mary with experience across government, political campaigns, and health policy research. I’ve supported offices ranging from Senator Tim Kaine’s legislative team to the Embassy of Spain, contributing to policy tracking, constituent communications, and diplomatic event coordination. These roles have given me hands-on exposure to both domestic and international policy work, sharpening my research, writing, and analytical skills.
-        </p>
+        <!-- Right column: about text -->
+        <div class="about-text">
+            <p>
+                I’m a Public Policy and Data Science student at the College of William & Mary with experience across government, political campaigns, and health policy research. I’ve supported offices ranging from Senator Tim Kaine’s legislative team to the Embassy of Spain, contributing to policy tracking, constituent communications, and diplomatic event coordination. These roles have given me hands-on exposure to both domestic and international policy work, sharpening my research, writing, and analytical skills.
+            </p>
 
-        <p>
-            Beyond internships, I’ve also developed practical experience in political outreach and campaign communications, including creating social media content and streamlining volunteer engagement for statewide initiatives. Bilingual in English and Spanish, I’m passionate about using data and policy expertise to support informed decision-making and meaningful civic engagement.
-        </p>
-    </div>
-</div>
+            <p>
+                Beyond internships, I’ve also developed practical experience in political outreach and campaign communications, including creating social media content and streamlining volunteer engagement for statewide initiatives. Bilingual in English and Spanish, I’m passionate about using data and policy expertise to support informed decision-making and meaningful civic engagement.
+            </p>
+        </div>
     </div>
 
     <footer>
